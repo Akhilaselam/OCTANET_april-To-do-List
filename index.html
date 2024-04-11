@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #145472; /* Light blue background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .todo-container {
+            background-color: #dfe5e9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        .todo-header {
+            color: #128bee;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .todo-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .todo-item label {
+            margin-left: 10px;
+        }
+
+        .remove-button {
+            background-color: #eb96a9;
+            color: rgb(19, 18, 18);
+            border: none;
+            padding: 6px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="todo-container">
+    <div class="todo-header"> To-Do List</div>
+    <ul class="todo-list">
+        <li class="todo-item">
+            <input type="checkbox" id="task1">
+            <label for="Running">Running</label>
+            <button class="remove-button">Remove</button>
+        </li>
+        <li class="todo-item">
+            <input type="checkbox" id="task2">
+            <label for="Eating">Eating</label>
+            <button class="remove-button">Remove</button>
+        </li>
+        <li class="todo-item">
+            <input type="checkbox" id="task3">
+            <label for="reading">Reading</label>
+            <button class="remove-button">Remove</button>
+        </li>
+        <li class="todo-item">
+            <input type="checkbox" id="task4">
+            <label for="outing">outing</label>
+            <button class="remove-button">Remove</button>
+        </li>
+        <!-- Add more list items as needed -->
+    </ul>
+    <div>
+        <input type="text" id="newTodo" placeholder="Add a new task" style="margin-bottom: 10px;">
+        <button onclick="return false;">Add</button> <!-- Button disabled without JavaScript -->
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
